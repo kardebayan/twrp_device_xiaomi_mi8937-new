@@ -68,6 +68,11 @@ case "$(cat /sys/firmware/devicetree/base/model)" in
 		set_device_codename "uter"
 		set_device_model "UTER"
 		;;
+        "Qualcomm Technologies, Inc. MSM8953 + PMI8950 QRD SKU3")
+                set_device_codename "G"
+                set_device_model "10or G"
+                ;;
+
 esac
 
 exit 0
