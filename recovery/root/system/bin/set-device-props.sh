@@ -60,6 +60,10 @@ case "$(cat /sys/firmware/devicetree/base/model)" in
 		set_device_model "Redmi 4 Standard"
 		;;
 	# Non-MSM8937 devices
+        "Qualcomm Technologies, Inc. MSM8953 + PMI8950 QRD SKU3")
+                set_device_codename "G"
+                set_device_model "10or G"
+                ;;
 	"Qualcomm Technologies, Inc. E7 QRD SKU3")
 		set_device_codename "vince"
 		set_device_model "Redmi 5 Plus"

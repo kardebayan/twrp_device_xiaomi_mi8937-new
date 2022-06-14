@@ -21,8 +21,8 @@ fi
 
 if [ "$#" -eq 0 ]; then
     echo "Usage 1: "
-    echo "  ${0} <cust|system|vendor>"
-    echo "    Export cust|system|vendor partition as read-write and removable."
+    echo "  ${0} <oem|system|vendor>"
+    echo "    Export oem|system|vendor partition as read-write and removable."
     echo
     echo "Usage 2: "
     echo "  ${0} -f <FILE> -p <PART> [-c] [-n] [-rm] [-ro]"
@@ -44,7 +44,7 @@ RO=""
 
 if [ "${#}" -eq 1 ]; then
     case "${1}" in
-        "cust"|"system"|"vendor")
+        "oem"|"system"|"vendor")
             PART="${1}"
             REMOVABLE="1"
             ;;
