@@ -1,1 +1,3 @@
-/system_ext	ext4	system_ext		flags=display="System_EXT"
+/system		            ext4	     system                                wait,logical,first_stage_mount,flags=backup=1;display="System"
+/system_image	        emmc	     system                                flags=backup=1;display="System Image";flashimg=1;wipeingui
+/system_ext	          ext4	     system_ext		                         flags=display="system_ext"
